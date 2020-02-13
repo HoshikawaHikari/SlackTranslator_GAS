@@ -53,9 +53,9 @@ GAS側の設定を行います。
 3. ソースコード内の TOKEN 部分を、控えておいた OAuth Access Token に差し替えます。
 
 4. メニューの[公開] > [ウェブアプリケーションとして導入] ボタン押してデプロイします。
- - [Execute the app as:] は "Me(`example@gmail.com`)" を選択します。
- - [Who has access to the app:] は "Anyone, even anonymous" を選択します。
- - [導入] ボタンを押してデプロイします。
+   - [Execute the app as:] は "Me(`example@gmail.com`)" を選択します。
+   - [Who has access to the app:] は "Anyone, even anonymous" を選択します。
+   - [導入] ボタンを押してデプロイします。
 
 8. デプロイ後に表示されるURLをSlackApp側に設定するので控えておきます。
 
