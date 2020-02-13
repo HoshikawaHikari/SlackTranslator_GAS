@@ -42,7 +42,7 @@ Google Apps Script (GAS) を使っているので、無料で最大1日1万回�
 
 ### Create Google Apps Script
 
-GAS側の設定を行います。
+GAS側の設定を行います。  
 新規GASにSlackTranslator.gsをコピペしてTOKENだけ書き換えてウェブアプリケーションとして公開するだけです。
 
 1. GoogleドライブでGoogleAppScriptを新規作成します。(見当たらない場合は [+アプリを追加] から探す)
