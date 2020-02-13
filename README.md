@@ -11,7 +11,7 @@ Translation bot that responds to Emoji Reactions in Slack.
 Google Apps Script (GAS) を使っているので、無料で最大1日1万回の実行が可能です。  
 ※同じGoogleアカウントの他のGASでURLFetchが使われておらず、パーマリンク等を使用しない設定の場合の最大数。
 
-導入手順は[Installation]("https://github.com/HoshikawaHikari/SlackTranslator_GAS#Installation") を参考にして下さい。
+導入手順は [Installation](https://github.com/HoshikawaHikari/SlackTranslator_GAS#Installation) を参考にして下さい。
 
 
 ## Prerequisites
@@ -23,7 +23,7 @@ Google Apps Script (GAS) を使っているので、無料で最大1日1万回�
 
 ### Create Slack App
 
-まず [SlackApp]("https://api.slack.com/apps") の作成を行います。  
+まず [SlackApp](https://api.slack.com/apps) の作成を行います。  
 新規SlackAppにイベントの設定と権限スコープの設定をしてワークスペースにインストールします。
 
 1. [Create New App] ボタンを押してSlackAppを新規作成します。
@@ -54,7 +54,7 @@ GAS側の設定を行います。
 
 4. メニューの[公開] > [アプリケーション] ボタンを押します。
 
-5. [Execute the app as:] は "Me(example@gmail.com)" を選択します。
+5. [Execute the app as:] は "Me(`example@gmail.com`)" を選択します。
 
 6. [Who has access to the app:] は "Anyone, even anonymous" を選択します。
 
