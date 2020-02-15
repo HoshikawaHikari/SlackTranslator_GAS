@@ -7,6 +7,8 @@ Translation bot that responds to Emoji Reactions in Slack.
 ## Getting Started
 
 特定の絵文字のリアクションがついたことを検知して動作するSlackの翻訳ボットです。
+![EN2zpzLUwAEuCIr](https://user-images.githubusercontent.com/16908935/74594032-16ac2e80-5075-11ea-8c3d-e2ade468dab4.png)
+![EN2udLuUYAAHCmr](https://user-images.githubusercontent.com/16908935/74594040-20359680-5075-11ea-82ff-0324e9d5d8dd.png)
 
 Google Apps Script (GAS) を使っているので、無料で最大1日1万回の実行が可能です。  
 ※同じGoogleアカウントの他のGASでURLFetchが使われておらず、パーマリンク等を使用しない設定の場合の最大数。
