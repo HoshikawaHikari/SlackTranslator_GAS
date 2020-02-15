@@ -1,84 +1,121 @@
-# SlackTranslator
+# SlackTranslator_GAS
 
-Slack‚ÅƒŠƒAƒNƒVƒ‡ƒ“‚É‘Î‚µ‚Ä”½‰‚·‚é–|–óƒ{ƒbƒgB  
+Slackã§ãƒªã‚¢ã‚¯ã‚·ãƒ§ãƒ³ã«å¯¾ã—ã¦åå¿œã™ã‚‹ç¿»è¨³ãƒœãƒƒãƒˆã€‚  
 Translation bot that responds to Emoji Reactions in Slack.
 
 
 ## Getting Started
 
-“Á’è‚ÌŠG•¶š‚ÌƒŠƒAƒNƒVƒ‡ƒ“‚ª‚Â‚¢‚½‚±‚Æ‚ğŒŸ’m‚µ‚Ä“®ì‚·‚éSlack‚Ì–|–óƒ{ƒbƒg‚Å‚·B
+- Adout  
+ç‰¹å®šã®çµµæ–‡å­—ã®ãƒªã‚¢ã‚¯ã‚·ãƒ§ãƒ³ãŒã¤ã„ãŸã“ã¨ã‚’æ¤œçŸ¥ã—ã¦å‹•ä½œã™ã‚‹Slackã®ç¿»è¨³ãƒœãƒƒãƒˆã§ã™ã€‚
+![EN2zpzLUwAEuCIr](https://user-images.githubusercontent.com/16908935/74594032-16ac2e80-5075-11ea-8c3d-e2ade468dab4.png)
+![EN2udLuUYAAHCmr](https://user-images.githubusercontent.com/16908935/74594040-20359680-5075-11ea-82ff-0324e9d5d8dd.png)
 
-Google Apps Script (GAS) ‚ğg‚Á‚Ä‚¢‚é‚Ì‚ÅA–³—¿‚ÅÅ‘å1“ú1–œ‰ñ‚ÌÀs‚ª‰Â”\‚Å‚·B  
-¦“¯‚¶GoogleƒAƒJƒEƒ“ƒg‚Ì‘¼‚ÌGAS‚ÅURLFetch‚ªg‚í‚ê‚Ä‚¨‚ç‚¸Aƒp[ƒ}ƒŠƒ“ƒN“™‚ğg—p‚µ‚È‚¢İ’è‚Ìê‡‚ÌÅ‘å”B
+Google Apps Script (GAS) ã‚’ä½¿ç”¨ã™ã‚‹ã®ã§ã€ç„¡æ–™ã§æœ€å¤§1æ—¥1ä¸‡å›ã®å®Ÿè¡ŒãŒå¯èƒ½ã§ã™ã€‚  
+â€»åŒã˜Googleã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ä»–ã®GASã§URLFetchãŒä½¿ã‚ã‚Œã¦ãŠã‚‰ãšã€ãƒ‘ãƒ¼ãƒãƒªãƒ³ã‚¯ç­‰ã‚’ä½¿ç”¨ã—ãªã„è¨­å®šã®å ´åˆã®æœ€å¤§æ•°ã€‚
 
-“±“üè‡‚Í[Installation]("https://github.com/HoshikawaHikari/SlackTranslator_GAS#Installation") ‚ğQl‚É‚µ‚Ä‰º‚³‚¢B
+- Installation  
+å°å…¥æ‰‹é †ã¯ [Installation](https://github.com/HoshikawaHikari/SlackTranslator_GAS#installation) ã‚’å‚è€ƒã«ã—ã¦ä¸‹ã•ã„ã€‚
+
+- Customization  
+ã‚«ã‚¹ã‚¿ãƒ æ–¹æ³•ã¯ [Source code custom](https://github.com/HoshikawaHikari/SlackTranslator_GAS#source-code-custom) ã‚’å‚è€ƒã«ã—ã¦ä¸‹ã•ã„ã€‚
 
 
 ## Prerequisites
 
-- You have permission to add apps to Slack.
-- Slack‚ÉƒAƒvƒŠ‚ğ’Ç‰Á‚·‚éŒ ŒÀ‚ª‚ ‚é‚±‚ÆB
+- Slackã«ã‚¢ãƒ—ãƒªã‚’è¿½åŠ ã™ã‚‹æ¨©é™ãŒã‚ã‚‹ã“ã¨ã€‚
 
 ## Installation
 
+æ‰‹é †ã¨ã—ã¦ã¯ä»¥ä¸‹ã®4ã¤ã§ã™ã€‚
+1. SlackAppã®ä½œæˆã¨è¨­å®š
+2. GASã®ä½œæˆã¨å…¬é–‹
+3. GASã®URLã‚’SlackAppã«è¨­å®š
+4. Slackã«çµµæ–‡å­—è¿½åŠ 
 
 ### Create Slack App
 
-‚Ü‚¸ [SlackApp]("https://api.slack.com/apps") ‚Ìì¬‚ğs‚¢B
-V‹KSlackApp‚ÉƒCƒxƒ“ƒg‚Ìİ’è‚ÆŒ ŒÀƒXƒR[ƒv‚Ìİ’è‚ğ‚µ‚Äƒ[ƒNƒXƒy[ƒX‚ÉƒCƒ“ƒXƒg[ƒ‹‚µ‚Ü‚·B
+ã¾ãš [SlackApp](https://api.slack.com/apps) ã®ä½œæˆã¨è¨­å®šã§ã™ã€‚  
+æ–°è¦SlackAppã«ã‚¤ãƒ™ãƒ³ãƒˆã®è¨­å®šã¨æ¨©é™ã‚¹ã‚³ãƒ¼ãƒ—ã®è¨­å®šã‚’ã—ã¦ãƒ¯ãƒ¼ã‚¯ã‚¹ãƒšãƒ¼ã‚¹ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™ã€‚
 
-1. [Create New App] ƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚ÄSlackApp‚ğV‹Kì¬‚µ‚Ü‚·B
+1. [Create New App] ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ã¦SlackAppã‚’æ–°è¦ä½œæˆã—ã¾ã™ã€‚
 
-2. [Event Subscriptions] ‚ğON‚É‚µ‚Ä [Subscribe to workspace events] ‚É "reaction_added" ‚ğ’Ç‰Á‚µ‚Ü‚·B
+2. [Event Subscriptions] ã‚’ONã«ã—ã¦ [Subscribe to workspace events] ã« "reaction_added" ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 ![2020-02-13 19 19 11 api slack com 42e445c05fcd](https://user-images.githubusercontent.com/16908935/74427767-0fc9c400-4e9b-11ea-80f8-5746507227ad.jpg)
 
-3. [OAuth & Permissions] > [Scopes] > [Bot Token Scopes] ‚É "reactions:read", "channels:history", "chat:write" ‚ğ’Ç‰Á‚µ‚Ü‚·B
+3. [OAuth & Permissions] > [Scopes] > [Bot Token Scopes] ã«å¿…è¦ãªã‚¹ã‚³ãƒ¼ãƒ—ã‚’è¿½åŠ ã—ã¾ã™ã€‚  
+   æœ€ä½é™å¿…è¦ãªã‚‚ã®ã¯ "reactions:read", "channels:history", "chat:write" ã§ã™ã€‚
 ![2020-02-13 19 59 34 api slack com fb55921afb42](https://user-images.githubusercontent.com/16908935/74427925-61724e80-4e9b-11ea-82bc-ca32721007cf.jpg)
 
-4. [OAuth & Permissions] > [OAuth Tokens & Redirect URLs] €–Ú‚Ì [Install App to WorkSpace] ƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚Äƒ[ƒNƒXƒy[ƒX‚ÉƒCƒ“ƒXƒg[ƒ‹‚µ‚Ü‚·B
+4. [OAuth & Permissions] > [OAuth Tokens & Redirect URLs] é …ç›®ã® [Install App to WorkSpace] ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ã¦ãƒ¯ãƒ¼ã‚¯ã‚¹ãƒšãƒ¼ã‚¹ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™ã€‚
 
-5. ƒCƒ“ƒXƒg[ƒ‹‚µ‚½‚ç OAuth Access Token ‚ª•\¦‚³‚ê‚é‚Ì‚ÅGAS‘¤‚Åg‚¤ˆ×‚ÉT‚¦‚Ä‚¨‚«‚Ü‚·B
+5. ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸã‚‰ OAuth Access Token ãŒè¡¨ç¤ºã•ã‚Œã‚‹ã®ã§GASå´ã§ä½¿ã†ç‚ºã«æ§ãˆã¦ãŠãã¾ã™ã€‚
+
+6. ãŠå¥½ã¿ã§ã‚¢ã‚¤ã‚³ãƒ³ç­‰ã‚’è¨­å®šã—ã¾ã™ã€‚
 
 
 ### Create Google Apps Script
 
-GAS‘¤‚Ìİ’è‚ğs‚¢‚Ü‚·B
-V‹KGAS‚ÉSlackTranslator.gs‚ğƒRƒsƒy‚µ‚ÄTOKEN‚¾‚¯‘‚«Š·‚¦‚ÄƒEƒFƒuƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚Æ‚µ‚ÄŒöŠJ‚·‚é‚¾‚¯‚Å‚·B
+GASå´ã®è¨­å®šã‚’è¡Œã„ã¾ã™ã€‚  
+æ–°è¦GASã«`SlackTranslator.gs`ã‚’ã‚³ãƒ”ãƒšã—ã¦`TOKEN`ã ã‘æ›¸ãæ›ãˆã¦ã‚¦ã‚§ãƒ–ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã¨ã—ã¦å…¬é–‹ã™ã‚‹ã ã‘ã§ã™ã€‚
 
-1. Googleƒhƒ‰ƒCƒu‚ÅGoogleAppScript‚ğV‹Kì¬‚µ‚Ü‚·B(Œ©“–‚½‚ç‚È‚¢ê‡‚Í [+ƒAƒvƒŠ‚ğ’Ç‰Á] ‚©‚ç’T‚·)
+1. Googleãƒ‰ãƒ©ã‚¤ãƒ–ã§GoogleAppScriptã‚’æ–°è¦ä½œæˆã—ã¾ã™ã€‚(è¦‹å½“ãŸã‚‰ãªã„å ´åˆã¯ [+ã‚¢ãƒ—ãƒªã‚’è¿½åŠ ] ã‹ã‚‰æ¢ã™)
 ![gas_01](https://user-images.githubusercontent.com/16908935/74428033-97afce00-4e9b-11ea-844b-493a806d2bf7.jpg)
 
-2. ƒŠƒ|ƒWƒgƒŠ‚Ì "GAS" ƒfƒBƒŒƒNƒgƒŠ‚É“ü‚Á‚Ä‚¢‚é "SlackTranslator.gs" ‚Ì’†g‚ğƒRƒsƒy‚µ‚Ü‚·B
+2. ãƒªãƒã‚¸ãƒˆãƒªã® "GAS" ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã«å…¥ã£ã¦ã„ã‚‹ `SlackTranslator.gs` ã®ä¸­èº«ã‚’ã‚³ãƒ”ãƒšã—ã¾ã™ã€‚
 
-3. ƒ\[ƒXƒR[ƒh“à‚Ì TOKEN •”•ª‚ğAT‚¦‚Ä‚¨‚¢‚½ OAuth Access Token ‚É·‚µ‘Ö‚¦‚Ü‚·B
+3. ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰å†…ã® `TOKEN = xoxp-...` ã®éƒ¨åˆ†ã‚’ã€æ§ãˆã¦ãŠã„ãŸ OAuth Access Token ã«å·®ã—æ›¿ãˆã¾ã™ã€‚
 
-4. ƒƒjƒ…[‚Ì[ŒöŠJ] > [ƒAƒvƒŠƒP[ƒVƒ‡ƒ“] ƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚Ü‚·B
+4. ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®[å…¬é–‹] > [ã‚¦ã‚§ãƒ–ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã¨ã—ã¦å°å…¥] ãƒœã‚¿ãƒ³æŠ¼ã—ã¦ãƒ‡ãƒ—ãƒ­ã‚¤ã—ã¾ã™ã€‚
+   - [Execute the app as:] ã¯ "Me(`example@gmail.com`)" ã‚’é¸æŠã—ã¾ã™ã€‚
+   - [Who has access to the app:] ã¯ "Anyone, even anonymous" ã‚’é¸æŠã—ã¾ã™ã€‚
+   - [å°å…¥] ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ã¦ãƒ‡ãƒ—ãƒ­ã‚¤ã—ã¾ã™ã€‚
 
-5. [Execute the app as:] ‚Í "Me(example@gmail.com)" ‚ğ‘I‘ğ‚µ‚Ü‚·B
-
-6. [Who has access to the app:] ‚Í "Anyone, even anonymous" ‚ğ‘I‘ğ‚µ‚Ü‚·B
-
-7. [“±“ü] ƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚ÄƒfƒvƒƒC‚µ‚Ü‚·B
-
-8. ƒfƒvƒƒCŒã‚É•\¦‚³‚ê‚éURL‚ğSlackApp‘¤‚Éİ’è‚·‚é‚Ì‚ÅT‚¦‚Ä‚¨‚«‚Ü‚·B
+8. ãƒ‡ãƒ—ãƒ­ã‚¤å¾Œã«è¡¨ç¤ºã•ã‚Œã‚‹`URL`ã‚’SlackAppå´ã«è¨­å®šã™ã‚‹ã®ã§æ§ãˆã¦ãŠãã¾ã™ã€‚
 
 
 ### Slack App URL settings
 
-SlackApp‘¤‚ÉƒCƒxƒ“ƒg’Ê’mæ‚ğİ’è‚µ‚Ü‚·B
+SlackAppå´ã«ã‚¤ãƒ™ãƒ³ãƒˆé€šçŸ¥å…ˆã‚’è¨­å®šã—ã¾ã™ã€‚
 
-1. [Event Subscriptions] ‚Ì [Request URL] ‚É GAS‘¤‚ÅT‚¦‚Ä‚¨‚¢‚½URL‚ğİ’è‚µ‚Ü‚·B
+1. [Event Subscriptions] ã® [Request URL] ã« GASå´ã§æ§ãˆã¦ãŠã„ãŸ`URL`ã‚’è¨­å®šã—ã¾ã™ã€‚
 
 
 ### Slack Emoji settings
 
-Slack‚É–|–ó—p‚ÌŠG•¶š‚ğ’Ç‰Á‚µ‚Ü‚·B
+Slackã«ç¿»è¨³ç”¨ã®çµµæ–‡å­—ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 
-1. ƒŠƒ|ƒWƒgƒŠ‚Ì "Resource" ƒfƒBƒŒƒNƒgƒŠ‚É“ü‚Á‚Ä‚¢‚é "en.png" ‚ğ ":en:" ‚Æ‚µ‚ÄSlack‚ÉŠG•¶š’Ç‰Á‚µ‚Ü‚·B
+1. ãƒªãƒã‚¸ãƒˆãƒªã® "Resource" ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã«å…¥ã£ã¦ã„ã‚‹ "en.png" ã‚’ `:en:` ã¨ã—ã¦Slackã«çµµæ–‡å­—è¿½åŠ ã—ã¾ã™ã€‚
 
-2. ƒŠƒ|ƒWƒgƒŠ‚Ì "Resource" ƒfƒBƒŒƒNƒgƒŠ‚É“ü‚Á‚Ä‚¢‚é "jp.png" ‚ğ ":jp:" ‚Æ‚µ‚ÄSlack‚ÉŠG•¶š’Ç‰Á‚µ‚Ü‚·B
+2. ãƒªãƒã‚¸ãƒˆãƒªã® "Resource" ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã«å…¥ã£ã¦ã„ã‚‹ "jp.png" ã‚’ `:jp:` ã¨ã—ã¦Slackã«çµµæ–‡å­—è¿½åŠ ã—ã¾ã™ã€‚
 
-¦ ‰æ‘œ‚ÍD‚«‚È‚à‚Ì‚ğg‚Á‚Ä‚¢‚½‚¾‚¢‚Ä\‚¢‚Ü‚¹‚ñ‚ªA":en:", ":jp:" ‚Í•Ï‚¦‚È‚¢‚Å‰º‚³‚¢B
+â€» ç”»åƒã¯å¥½ããªã‚‚ã®ã‚’ä½¿ã£ã¦ã„ãŸã ã„ã¦æ§‹ã„ã¾ã›ã‚“ãŒã€`:en:`, `:jp:` ã¯å¤‰ãˆãªã„ã§ä¸‹ã•ã„ã€‚
+
+
+## Source code custom
+
+### TOKEN
+ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã®TOKENã«ã¯SlackAppã§ç™ºè¡Œã•ã‚ŒãŸãƒˆãƒ¼ã‚¯ãƒ³ã‚’ä»£å…¥ã—ã¦ä¸‹ã•ã„ã€‚
+
+### Message Quote
+ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã®QUOTEãƒ•ãƒ©ã‚°ã‚’å¤‰æ›´ã™ã‚‹ã“ã¨ã§ã€ç¿»è¨³å¾Œã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã«ç¿»è¨³å‰ã®æ–‡ç« ã‚’å¼•ç”¨ã§æ·»ä»˜ã§ãã¾ã™ã€‚
+
+- `var QUOTE = true;`  
+![image](https://user-images.githubusercontent.com/16908935/74594334-94256e00-5078-11ea-9184-12aa48165c1c.png)
+
+- `var REF_QUOTE = true;`  
+![image](https://user-images.githubusercontent.com/16908935/74594382-0bf39880-5079-11ea-91af-72fdb18136bf.png)
+
+- `var REF_QUOTE_HIDE_URL = true;`  
+![image](https://user-images.githubusercontent.com/16908935/74594398-51b06100-5079-11ea-9d88-91c291a46517.png)
+
+- `var REF_QUOTE_UNFURL = true;`  
+![image](https://user-images.githubusercontent.com/16908935/74594410-83292c80-5079-11ea-97d7-8dd5f69a5706.png)
+
+
+### Add translate target languages
+
+ç¿»è¨³ã•ã›ã‚‹è¨€èªã®å¤‰æ›´ã‚„è¿½åŠ ã‚’è¡Œã„ãŸã„å ´åˆã¯ã€`getTranslateCode()` é–¢æ•°ã®ä¸­ã‚’å¤‰æ›´ã—ã¦ä¸‹ã•ã„ã€‚
 
 
 ## Reference
@@ -87,5 +124,5 @@ https://qiita.com/hotpepsi/items/3862618b38b463d37b53
 
 https://www.slideshare.net/tomomi/japanese-developing-a-bot-for-your-workspace-82133038
 
-https://nju33.com/note/post?note=slack&post=“Á’è‚ÌƒƒbƒZ[ƒW‚ğæ“¾
+https://nju33.com/note/post?note=slack&post=ç‰¹å®šã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å–å¾—
 
