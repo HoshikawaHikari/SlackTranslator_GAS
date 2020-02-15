@@ -63,15 +63,7 @@ function onReactionAdded(json) {
       var message = messages[0].text;
       var reactioneds = messages[0].reactions;
       //var languagePrefix;
-      var translateTo;
-      
-      if ((reaction == "en") && !isTranslateReactioned(reactioneds, reaction)) {
-        translateTo = "en";
-      }
-      if ((reaction == "ja") && !isTranslateReactioned(reactioneds, reaction)) {
-        //languagePrefix = ":ja:";
-        translateTo = "ja";
-      }
+      var translateTo = getTranslateCode(reaction, reactioneds);
       
       if (translateTo) {
         //var translatedMessage = languagePrefix + " " + LanguageApp.translate(message, "", translateTo);
@@ -101,6 +93,20 @@ function onReactionAdded(json) {
     }
   }
   return "OK";
+}
+
+
+function getTranslateCode(reaction, reactioneds)
+{
+  var translateTo;
+      
+  if ((reaction == "en") && !isTranslateReactioned(reactioneds, reaction)) {
+    translateTo = "en";
+  }
+  if ((reaction == "ja") && !isTranslateReactioned(reactioneds, reaction)) {
+    translateTo = "ja";
+  }
+  return translateTo;
 }
 
 
