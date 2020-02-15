@@ -20,10 +20,15 @@ Google Apps Script (GAS) を使っているので、無料で最大1日1万回�
 
 ## Installation
 
+手順としては以下の4つです。
+1. SlackAppの作成と設定
+2. GASの作成と公開
+3. GASのURLをSlackAppに設定
+4. Slackに絵文字追加
 
 ### Create Slack App
 
-まず [SlackApp](https://api.slack.com/apps) の作成を行います。  
+まず [SlackApp](https://api.slack.com/apps) の作成と設定です。  
 新規SlackAppにイベントの設定と権限スコープの設定をしてワークスペースにインストールします。
 
 1. [Create New App] ボタンを押してSlackAppを新規作成します。
@@ -38,6 +43,8 @@ Google Apps Script (GAS) を使っているので、無料で最大1日1万回�
 4. [OAuth & Permissions] > [OAuth Tokens & Redirect URLs] 項目の [Install App to WorkSpace] ボタンを押してワークスペースにインストールします。
 
 5. インストールしたら OAuth Access Token が表示されるのでGAS側で使う為に控えておきます。
+
+6. お好みでアイコン等を設定します。
 
 
 ### Create Google Apps Script
