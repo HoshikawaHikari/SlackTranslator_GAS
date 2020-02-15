@@ -1,4 +1,4 @@
-# SlackTranslator
+# SlackTranslator_GAS
 
 Slackでリアクションに対して反応する翻訳ボット。  
 Translation bot that responds to Emoji Reactions in Slack.
