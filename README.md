@@ -95,7 +95,7 @@ Slackに翻訳用の絵文字を追加します。
 ## Source code custom
 
 ### TOKEN
-ソースコードのTOKENにはSlackAppで発行されたトークンを代入して下さい。
+ソースコードのTOKENにはSlackAppで発行されたトークンを代入して下さい。  
 `var TOKEN = "xoxp-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";`
 
 ### Message Quote
