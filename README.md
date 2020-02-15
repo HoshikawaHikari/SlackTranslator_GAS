@@ -10,7 +10,7 @@ Translation bot that responds to Emoji Reactions in Slack.
 ![EN2zpzLUwAEuCIr](https://user-images.githubusercontent.com/16908935/74594032-16ac2e80-5075-11ea-8c3d-e2ade468dab4.png)
 ![EN2udLuUYAAHCmr](https://user-images.githubusercontent.com/16908935/74594040-20359680-5075-11ea-82ff-0324e9d5d8dd.png)
 
-Google Apps Script (GAS) を使っているので、無料で最大1日1万回の実行が可能です。  
+Google Apps Script (GAS) を使用するので、無料で最大1日1万回の実行が可能です。  
 ※同じGoogleアカウントの他のGASでURLFetchが使われておらず、パーマリンク等を使用しない設定の場合の最大数。
 
 導入手順は [Installation](https://github.com/HoshikawaHikari/SlackTranslator_GAS#Installation) を参考にして下さい。
