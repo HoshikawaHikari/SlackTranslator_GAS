@@ -6,6 +6,7 @@ Translation bot that responds to Emoji Reactions in Slack.
 
 ## Getting Started
 
+### Adout
 特定の絵文字のリアクションがついたことを検知して動作するSlackの翻訳ボットです。
 ![EN2zpzLUwAEuCIr](https://user-images.githubusercontent.com/16908935/74594032-16ac2e80-5075-11ea-8c3d-e2ade468dab4.png)
 ![EN2udLuUYAAHCmr](https://user-images.githubusercontent.com/16908935/74594040-20359680-5075-11ea-82ff-0324e9d5d8dd.png)
@@ -15,6 +16,7 @@ Google Apps Script (GAS) を使用するので、無料で最大1日1万回の�
 
 導入手順は [Installation](https://github.com/HoshikawaHikari/SlackTranslator_GAS#Installation) を参考にして下さい。
 
+### Message quote
 
 ## Prerequisites
 
@@ -85,6 +87,32 @@ Slackに翻訳用の絵文字を追加します。
 2. リポジトリの "Resource" ディレクトリに入っている "jp.png" を `:jp:` としてSlackに絵文字追加します。
 
 ※ 画像は好きなものを使っていただいて構いませんが、`:en:`, `:jp:` は変えないで下さい。
+
+
+## Source code custom
+
+### TOKEN
+ソースコードのTOKENにはSlackAppで発行されたトークンを代入して下さい。
+
+### Message Quote
+ソースコードのQUOTEフラグを変更することで、翻訳後のメッセージに翻訳前の文章を引用で添付できます。
+
+- `var QUOTE = true;`  
+![image](https://user-images.githubusercontent.com/16908935/74594334-94256e00-5078-11ea-9184-12aa48165c1c.png)
+
+- `var REF_QUOTE = true;`  
+![image](https://user-images.githubusercontent.com/16908935/74594382-0bf39880-5079-11ea-91af-72fdb18136bf.png)
+
+- `var REF_QUOTE_HIDE_URL = true;`  
+![image](https://user-images.githubusercontent.com/16908935/74594398-51b06100-5079-11ea-9d88-91c291a46517.png)
+
+- `var REF_QUOTE_UNFURL = true;`  
+![image](https://user-images.githubusercontent.com/16908935/74594410-83292c80-5079-11ea-97d7-8dd5f69a5706.png)
+
+
+### Add translate target languages
+
+翻訳させる言語の変更や追加を行いたい場合は、`getTranslateCode()` 関数の中を変更して下さい。
 
 
 ## Reference
