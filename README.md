@@ -1,7 +1,8 @@
 # SlackTranslator_GAS
 
+[English](https://translate.google.com/translate?sl=ja&tl=en&u=https://github.com/HoshikawaHikari/SlackTranslator_GAS) (by Google Translate)
+
 Slackでリアクションに対して反応する翻訳ボット。  
-Translation bot that responds to Emoji Reactions in Slack.
 
 
 ## Getting Started
