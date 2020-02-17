@@ -1,7 +1,8 @@
 # SlackTranslator_GAS
 
+[English](https://translate.google.com/translate?sl=ja&tl=en&u=https://github.com/HoshikawaHikari/SlackTranslator_GAS) (by Google Translate)
+
 Slackでリアクションに対して反応する翻訳ボット。  
-Translation bot that responds to Emoji Reactions in Slack.
 
 
 ## Getting Started
@@ -95,7 +96,8 @@ Slackに翻訳用の絵文字を追加します。
 ## Source code custom
 
 ### TOKEN
-ソースコードのTOKENにはSlackAppで発行されたトークンを代入して下さい。
+ソースコードのTOKENにはSlackAppで発行されたトークンを代入して下さい。  
+`var TOKEN = "xoxp-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";`
 
 ### Message Quote
 ソースコードのQUOTEフラグを変更することで、翻訳後のメッセージに翻訳前の文章を引用で添付できます。
